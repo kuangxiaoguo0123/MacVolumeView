@@ -84,14 +84,27 @@ public class VolumeView extends View {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
                 downX = event.getX();
+                /**
+                 * 点击小球
+                 */
                 if (downX > mStartValue && downX < mStartValue + 2 * mBallRadius) {
                     state = TouchEnum.TOUCH_BALL;
                 } else {
+                    /**
+                     * 点击位置位于最左边小于球的直径处
+                     */
                     if (downX < 2 * mBallRadius) {
                         downX = 0;
                     } else if (downX > endValue) {
+                        /**
+                         * 点击位置位于最右边
+                         */
                         downX = endValue;
                     }
+                    /**
+                     * 使得mStartValue为我们按下的值刷新view
+                     * 并把state的状态置为TouchEnum.TOUCH_BALL
+                     */
                     mStartValue = (int) downX;
                     invalidate();
                     state = TouchEnum.TOUCH_BALL;
@@ -108,6 +121,9 @@ public class VolumeView extends View {
                         mStartValue = endValue;
                     }
                     invalidate();
+                    /**
+                     * 每刷新一次view之后把moveX的值赋给downX，这样在下次又重新获取moveX，两者相减就是我们滑动的距离。
+                     */
                     downX = moveX;
                 }
                 break;
