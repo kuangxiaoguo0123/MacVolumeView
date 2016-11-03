@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.asiatravel.macvolumeview.MainActivity">
+
+    <com.asiatravel.macvolumeview.wediget.VolumeView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:left_color="#4A9AF9"
+        app:right_color="#BBB9BB"
+        app:start_value="20dp" />
+
+    <com.asiatravel.macvolumeview.wediget.VolumeView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:ball_color="#f00"
+        app:left_color="#4A9AF9"
+        app:right_color="#BBb9BB"
+        app:start_value="50dp" />
+
+    <com.asiatravel.macvolumeview.wediget.VolumeView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:ball_color="#f0f"
+        app:left_color="#0f0"
+        app:right_color="#BBB9BB" />
+
+    <com.asiatravel.macvolumeview.wediget.VolumeView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:ball_color="@color/colorAccent"
+        app:left_color="@color/colorPrimary"
+        app:right_color="#BBB9BB"
+        app:start_value="20dp" />
+</LinearLayout>
