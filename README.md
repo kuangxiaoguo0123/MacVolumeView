@@ -7,6 +7,7 @@
         android:layout_height="wrap_content"
         app:left_color="#4A9AF9"
         app:right_color="#BBB9BB"
+        app:ball_color="#fff"
         app:start_value="20dp" />
 ````
 ## 效果图
