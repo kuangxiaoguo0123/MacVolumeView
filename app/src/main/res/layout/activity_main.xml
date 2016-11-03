@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         app:left_color="#4A9AF9"
         app:right_color="#BBB9BB"
+        app:ball_color="#fff"
         app:start_value="20dp" />
 
     <com.asiatravel.macvolumeview.wediget.VolumeView
@@ -29,8 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        app:ball_color="#f0f"
-        app:left_color="#0f0"
+        app:left_color="#f0f"
         app:right_color="#BBB9BB" />
 
     <com.asiatravel.macvolumeview.wediget.VolumeView
